@@ -1,4 +1,4 @@
-.body{
+.body {
     background-color: snow;
     padding: 0;
     margin: 0;
@@ -25,23 +25,18 @@
 }
 .mcenter{
     height: 100%;
-    width: 80%;
     display: flex;
     flex-direction: row;
-}
-.mcl{
-    height: 100%;
-    width: 20%;
+    justify-content: center;
 }
 .mclul{
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
     padding: 0;
-    margin: 0 0 0 64px;
+    margin: 0;
 }
 .logo{
     border-left: 1px solid rgb(207, 207, 207);
@@ -49,6 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .rubika{
     height: 100%;
@@ -79,19 +75,15 @@
     width: 100%;
     padding: 0 2px;    
 }
-.mcr{
-    height: 100%;
-    width: 80%;
-    margin: 0 85px 0 0;
-}
 .mcrul{
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     list-style-type: none;
     margin: 0%;
+    padding: 0;
+    cursor: pointer;
 }
 .mli{
     height: 100%;
@@ -114,6 +106,9 @@
 .tel{
     padding: 0 5px;
 }
+.icon{
+    background-color: white;
+}
 .mlis{
     width: 270px;
     height: 100%;
@@ -121,10 +116,8 @@
     margin-bottom: 1px;
     padding-left: 10px;
 }
-.mliimg{
-    max-height: 100%;
-    width: 100%;
-    mix-blend-mode: color-burn;
+.searchicon{
+    height: 80%;
 }
 .homeicon{
     max-height: 100%;
@@ -154,7 +147,7 @@
     mix-blend-mode: color-burn;    
     margin: 0 3px 0 5px;    
 }
-p{
+.pcart{
     background-color: rgb(19, 200, 255);
     border-radius: 70%;
 }
@@ -166,27 +159,21 @@ p{
 }
 .bttmcenter{
     height: 99%;
-    width: 70%;
     display: flex;
     flex-direction: row;
 }
 .shixon{
     height: 100%;
-    width: 20%;
     padding-top: 5px;
+    margin: 0 100px 0 0;
 }
 .shixonlogo{
     height: 80%;
-    width: 70%;
-}
-.bcr{
-    height: 100%;
-    width: 80%;
+    cursor: pointer;
 }
 .bcrul{
     height: 100%;
-    width: 100%;
-    padding: 0;
+    /* padding: 5px; */
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
@@ -196,6 +183,18 @@ p{
     list-style-type: none;
     color: gray;
 }
+.btnli{
+    cursor: pointer;
+    transition: .4s;
+    padding: 2px 3px;
+}
+.btnli:hover{
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+    /* border-bottom: 1px solid #010101; */
+}
+
 .rangi{
     color: purple;
 }

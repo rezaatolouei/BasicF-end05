@@ -1,0 +1,134 @@
+.banner{
+    height: 400px;
+}
+.banner > img{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+}
+.orginality{
+    height: 90px;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 10px;
+}
+.orginality > li{
+    width: 20%;
+    height: 70%;
+    padding: 3px 0;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.orginality > li > div{
+    height: 75%;
+}
+.truckicon{
+    height: 100%;
+}
+.calendaricon{
+    height: 80%;
+    margin-top: 7px;
+}
+.gifticon{
+    height: 70%;
+    margin-top: 7px;
+}
+.bagicon{
+    height: 90%;
+    margin-top: 2px;
+}
+.pakageicon{
+    height: 80%;
+    margin-top: 6px;
+}
+.offercontent{
+    background-color: rgb(155, 155, 155);
+    height: 450px;
+    margin-top: 30px
+}
+.offertitle{
+    background-color: snow;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    height: 85%;
+    padding: 10px;
+    background-color: rgb(155, 155, 155);
+    border: 2px solid white;
+}
+.offercontent > .offertitle > .title > h3{
+    margin: 0;
+}
+.offers{
+    height: 90%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.offerBanner{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.jordanlogo{
+    height: 60%;
+    margin-top: 100px;
+}
+.ffertitle{
+    display: inline;
+    margin-right: 15px;
+}
+.offerlist{
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px;
+}
+.offercontent > .offers > .offerlist > li{
+    width: 18%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offercontent > .offers > .offerlist > li > img{
+    width: 70%;
+}
+.shoes1{
+    height: 40%;
+}
+.shoes2{
+    height: 40%;
+}
+.shoes3{
+    height: 40%;
+}
+.shoes4{
+    height: 40%;
+}
+.shoes5{
+    height: 40%;
+}
+.offercontent > .offers > .offerlist > li > .offerp{
+    background-color: crimson;
+    border-radius: 4px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+
+}
