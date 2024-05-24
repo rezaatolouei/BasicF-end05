@@ -57,7 +57,9 @@
     margin-top: 30px
 }
 .offertitle{
-    background-color: snow;
+    pointer-events: none;
+    user-select: none;
+    background-color: white;
     height: 6%;
     display: flex;
     justify-content: center;
@@ -78,6 +80,8 @@
     flex-direction: row;
 }
 .offerBanner{
+    user-select: none;
+    pointer-events: none;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -100,13 +104,31 @@
     padding: 10px;
 }
 .offercontent > .offers > .offerlist > li{
+    transition: .2s;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px black;
+    cursor: pointer;
     width: 18%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.offercontent > .offers > .offerlist > li:hover{
+    background-color: crimson;
+    padding-bottom: 5px;
+    box-shadow: inset;
+    border-radius: 5px;
+}
+.offercontent > .offers > .offerlist > li:hover > .offerp{
+    background-color: white;
+    color: crimson;
+    font-weight: bolder;
+}
 .offercontent > .offers > .offerlist > li > img{
+    border-radius: 5px;
+    pointer-events: none;
+    user-select: none;
     width: 70%;
 }
 .shoes1{
@@ -132,3 +154,178 @@
     margin: 0;
 
 }
+.brandbanners{
+    margin-top: 40px;
+}
+.brandstop{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.brandsbannertop{
+    transition: .4s;
+    cursor: pointer;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.brandsbannertop:hover{
+    width: 500px;
+    height: 350px;
+}
+.brandsbottom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.brandsbannerbottom{
+    transition: .4s;
+    cursor: pointer;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.brandsbannerbottom:hover{
+    width: 500px;
+    height: 350px;
+}
+.rolexpic{
+    width: 500px;
+}
+.rolexpic:hover{
+    width: 650px;
+    height: 400px;
+}
+.OSc{
+    background-color: white;
+}
+.OVl{
+}
+.OStb{
+    margin-top: 190px;
+    font-weight: 900;
+}
+.OSt{
+    border-bottom: 3px solid black;
+}
+.Ot{
+    background-color: white;
+}
+.OVlist > li{
+    background-color: rgb(155, 155, 155);
+}
+.O1{
+    height: 49%;
+}
+.Newcontent{
+    height: 500px;
+}
+.oN{
+    align-items: center;
+    flex-direction: column;
+}
+.olN{
+    flex-grow: 0;
+    width: 75%;
+    height: 100%;
+}
+.Bottomtitle{
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .4s;
+    height: 85%;
+    padding: 10px;
+    background-color: rgb(155, 155, 155);
+}
+.Bottomtitle:hover{
+    background-color: crimson;
+    border-radius: 10px;
+}
+.showmore{
+    margin: 0;
+}
+.ofNew{
+    background-color: rgb(155, 155, 155);
+    height: 6%;
+    display: flex;
+    justify-content: center;
+}
+.rowpic{
+    transition: .4s;
+    cursor: pointer;
+    width: 310px;
+    height: 240px;
+    border-radius: 10px;
+}
+.rowpic:hover{
+    width: 360px;
+    height: 290px;
+}
+.Shixont{
+    background-color: white;
+    border: 2px solid purple;
+    text-align: center;
+    color: purple;
+    width: 200px;
+}
+.Shixont > h3{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background: url(../img/f1.png) no-repeat;
+    background-size: cover;
+    background-color: transparent;
+
+}
+.Shixonot{
+    height: 30px;
+    border-bottom: 1px solid rgb(207, 207, 207);;
+}
+.footertext{
+    margin-top: 50px;
+    height: 250px;
+    backdrop-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    position: relative;
+}
+.shixonftext{
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+.shixonftext > div{
+    
+    margin-left: 20px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 150px;
+    cursor: pointer;
+    transition: .4s;
+}
+.shixonftext > div:hover{
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+}
+.belt{
+    height: 300px;
+}
+/* .foot{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    color: white;
+    backdrop-filter: blur(4px);
+    -webkit-filter: blur(4px);
+} */

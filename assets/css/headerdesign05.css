@@ -1,12 +1,14 @@
 .body {
-    background-color: snow;
+    background-color: white;
     padding: 0;
     margin: 0;
 }
 .header{
+    position: fixed;
     background-color: antiquewhite;
     height: 110px;
     width: 100%;
+    z-index: 5;
 }
 .top{
     height: 30%;
@@ -45,6 +47,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.mclul > .logo > img{
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.mclul > .logo:hover > img{
+    filter: grayscale(0%);
 }
 .rubika{
     height: 100%;
@@ -158,6 +167,7 @@
     justify-content: center;
 }
 .bttmcenter{
+    position: relative;
     height: 99%;
     display: flex;
     flex-direction: row;
@@ -173,28 +183,112 @@
 }
 .bcrul{
     height: 100%;
-    /* padding: 5px; */
+    padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    gap: 0 10px;
+    gap: 20px;
     align-items: center;
     list-style-type: none;
     color: gray;
 }
 .btnli{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
     cursor: pointer;
-    transition: .4s;
-    padding: 2px 3px;
+    transition: .3s;
+}
+.btnli > .submenu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    height: 200px;
+    padding: 40px 60px 20px 30px;
+    color: black;
+    left: -10px;
+    bottom: -260px;
+    border-top: 3px solid purple;
+    position: absolute;
+    width: 1150px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+.submenutitle{
+    color: purple;
+    font-size: 20px;
+    font-weight: 900;
+}
+.submenudiv > ul > li{
+    border-bottom: 2px solid rgb(207, 207, 207);
+}
+.btnli:hover > .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+.btnli > .submenu > .submenudiv{
+    align-items: flex-start;
+    color: gray;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.btnli > .submenu > div > img{
+    width: 200px;
+    height: 180px;
+}
+.btnli > .submenu > .submenudiv > ul{
+    width: 150px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.btnli > .submenu > .submenudiv > ul > li > div{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid grey;
+    display: inline-block;
+}
+.btnli > .submenu > .submenudiv > ul > li{
+    padding: 5px 0;
+}
+.submenulist:hover{
+    color: red;
+    padding-left: 3px;
+}
+.btnli > .submenu > .submenudiv > ul > li:hover > div{
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid red
 }
 .btnli:hover{
+    justify-content: center;
+    height: 85%;
     color: white;
     background-color: purple;
     border-radius: 5px;
-    /* border-bottom: 1px solid #010101; */
 }
-
+.btnli > span{
+    margin-top: 10px;
+}
+.btnli > .triangle{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid white;
+    visibility: hidden;
+    opacity: 0;
+}
+.btnli:hover > .triangle{
+    visibility: visible;
+    opacity: 1;
+}
 .rangi{
     color: purple;
 }
